@@ -2,7 +2,7 @@
 
 body{
   background: linear-gradient(45deg, $backcolour1, $backcolour2 );
-  height: 150vh;
+  height: 100vh;
   font-family:  $font-stack;
 }
 
@@ -119,6 +119,7 @@ body{
   }
 }
 .foot{
+  float: bottom;
     left: 0; bottom: 0;
     padding: 10px;
     color: #fff;
@@ -212,4 +213,12 @@ ul li{
 }
 b{
   color:white;
+}
+.left{
+  float: left;
+  margin-left: 60px;
+}
+.right{
+  float: right;
+  margin-right: 60px;
 }

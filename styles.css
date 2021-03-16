@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(45deg, #B58CFF, #FFA1B0);
-  height: 150vh;
+  height: 100vh;
   font-family: Marker Felt, fantasy;
 }
 
@@ -107,6 +107,7 @@ a {
 }
 
 .foot {
+  float: bottom;
   left: 0;
   bottom: 0;
   padding: 10px;
@@ -197,6 +198,16 @@ a {
 
 b {
   color: white;
+}
+
+.left {
+  float: left;
+  margin-left: 60px;
+}
+
+.right {
+  float: right;
+  margin-right: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
