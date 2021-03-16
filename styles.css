@@ -107,9 +107,8 @@ a {
 }
 
 .foot {
-  float: bottom;
-  left: 0;
-  bottom: 0;
+  margin-left: 0;
+  margin-bottom: 0;
   padding: 10px;
   color: #fff;
   width: 100%;
