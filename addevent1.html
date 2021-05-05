@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title> Add event </title>
+    </head>
+    <body>
+        <div class="reg">
+        <form action="index.html" method="post">
+            <script src = "post.js">
+            </script>
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="text" name="content" placeholder="Content" required>
+             <input type="text" name="date" placeholder="Date" required>
+            <input
+                type="submit"
+                onclick="sendRequest('POST',event_post_url , {name:Name.value,content:content.value,date:date.value})
+                    .then(data=>console.log(data))
+                    .catch(err=>console.log(err))"
+                value="Submit"
+              />
+        </form>
+        </div>
+    <img class="tyan" src="tyan.png">
+    </body>
+</html>

@@ -7,15 +7,22 @@
     </head>
     <body>
         <div class="reg">
-        <form action="index.html" method="post">
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="text" placeholder="Email" required>
-            <input type="text" placeholder="Phone" required>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
-            <input type="submit" value="Sign Up" class="button">
+        <form action="loginpage.html" method="post">
+            <script src = "post.js">
+            </script>
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input
+                type="submit"
+                onclick="sendRequest('POST',reg_url , {username:username.value,password:password.value,firstName:firstName.value,lastName:lastName.value,email:email.value,phone:phone.value})
+                    .then(data=>console.log(data))
+                    .catch(err=>console.log(err))"
+                value="Register"
+              />
         </form>
             <a href="loginpage.html" >Already have an acount?</a>
         </div>
