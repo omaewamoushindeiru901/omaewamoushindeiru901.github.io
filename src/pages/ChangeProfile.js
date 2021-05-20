@@ -36,7 +36,7 @@ class ChangeProfile extends Component {
 
         e.preventDefault();
         const data = {
-            id: 4,
+            id: this.id,
             firstName: this.firstName,
             lastName: this.lastName,
             email: this.email,
