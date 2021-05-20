@@ -1,0 +1,243 @@
+body {
+  background: linear-gradient(45deg, #B58CFF, #FFA1B0);
+  height: 100vh;
+  font-family: Marker Felt, fantasy;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 90px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+a, form input[type=submit] {
+  display: block;
+  width: 300px;
+  font-size: 25px;
+  color: #F0E9FE;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+a:hover, form input[type=submit]:hover {
+  color: #F0A1FF;
+  background-color: #BF74CC;
+}
+
+h1 {
+  color: #F0E9FE;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 120px;
+}
+
+form input[type=text], form input[type=password] {
+  display: block;
+  width: 500px;
+  font-size: 25px;
+  padding: 15px;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: #BF74CC;
+  border: none;
+  border-radius: 8px;
+}
+form input[type=submit] {
+  padding: 5px;
+  border: none;
+  color: #F0A1FF;
+  font-family: Marker Felt, fantasy;
+}
+a {
+  font-weight: lighter;
+}
+
+.reg {
+  margin: 100px 0 0 100px;
+  float: left;
+}
+
+.tyan {
+  margin-top: 120px;
+  float: right;
+}
+
+.navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8869BF;
+}
+.navi li {
+  float: left;
+}
+.navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  border-radius: 0;
+  font-size: 20px;
+}
+.navi h2 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: lighter;
+}
+.navi li a:hover {
+  background-color: #B58CFF;
+}
+
+.foot {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  background-color: #8869BF;
+  height: 80px;
+}
+
+.notes body {
+  margin: 20px auto;
+  font-family: "Lato";
+  background: #666;
+  color: #fff;
+}
+.notes * {
+  margin: 0;
+  padding: 0;
+}
+.notes h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.notes p {
+  font-family: Marker Felt, fantasy;
+  font-size: 2rem;
+}
+.notes ul, .notes li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+.notes ul {
+  display: grid;
+  flex-wrap: wrap;
+}
+.notes ul li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: #666666 2px 2px 2px;
+  background: #EFF1B8;
+  display: block;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px #212121;
+  transform: rotate(-6deg);
+  transition: transform 0.15s linear;
+}
+.notes ul li:nth-child(even) a {
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: #F9C2CB;
+}
+.notes ul li:nth-child(3n) a {
+  transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: #A1FFF0;
+}
+.notes ul li:nth-child(5n) a {
+  transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+.notes ul li a:hover, .notes ul li a:focus {
+  box-shadow: 10px 10px 7px #212121;
+  transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+.notes ul li {
+  display: grid;
+  margin: 1em;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.profil p {
+  font-weight: lighter;
+  display: block;
+  width: 300px;
+  font-size: 25px;
+  color: #F0E9FE;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+b {
+  color: white;
+}
+
+.left {
+  float: left;
+  margin-left: 60px;
+}
+
+.right {
+  float: right;
+  margin-right: 60px;
+}
+
+h2 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+.card {
+  background: #BF74CC;
+  display: grid;
+  color: white;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: lighter;
+  grid-template-columns: 200px 200px 200px;
+  border-radius: 25px;
+  flex: 0 1 24%;
+  margin-bottom: 25px;
+  margin-right: 14px;
+  white-space: nowrap;
+  position: relative;
+}
+
+/*# sourceMappingURL=index.css.map */
