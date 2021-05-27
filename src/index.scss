@@ -1,0 +1,266 @@
+$font-stack: Marker Felt, fantasy;
+$backcolour1: #B58CFF;
+$backcolour2: #FFA1B0;
+$button1:#F0A1FF;
+$button2:#BF74CC;
+$logo: #F0E9FE;
+$navi: #8869BF;
+$notes1: #EFF1B8;
+$notes2: #A1FFF0;
+$notes3: #F9C2CB;
+
+body{
+  background: linear-gradient(45deg, $backcolour1, $backcolour2 );
+  height: 100vh;
+  font-family:  $font-stack;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.content {
+  padding-bottom: 90px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 960px;
+}
+
+%buttons{
+  display: block;
+     width: 300px;
+     font-size: 25px;
+     color:$logo;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+      margin-left: auto;
+    margin-right: auto;
+     border-radius: 8px;
+}
+
+%hoverbuttons{
+    color: $button1;
+    background-color: $button2;
+}
+  h1 {
+    color: $logo;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 120px;
+  }
+  form {
+    input[type="text"], input[type="password"]{
+      display: block;
+      width: 500px;
+      font-size: 25px;
+      padding: 15px;
+      margin: 10px auto;
+      text-align: center;
+      text-decoration: $button2;
+      border: none;
+      border-radius: 8px;
+    }
+    input[type="submit"]{
+      @extend %buttons;
+      padding: 5px;
+      border: none;
+      color: $button1;
+      font-family: $font-stack;
+    }
+    input[type="submit"]:hover{
+        @extend %hoverbuttons;
+    }
+  }
+   a{
+    @extend %buttons;
+     font-weight: lighter;
+  }
+  a:hover{
+    @extend %hoverbuttons;
+  }
+
+  .reg{
+    margin: 100px 0 0 100px;
+    float: left;
+  }
+
+  .tyan{
+    margin-top: 120px;
+     float: right;
+  }
+
+.navi {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $navi;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    border-radius: 0;
+    font-size: 20px;
+  }
+  h2{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: lighter;
+  }
+  li a:hover {
+    background-color: $backcolour1;
+  }
+}
+.foot{
+
+     margin-left: 0; margin-bottom: 0;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    background-color: $navi;
+    height: 80px;
+}
+.notes{
+  body {
+  margin: 20px auto;
+  font-family: 'Lato';
+  background:#666;
+  color:#fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+p {
+  font-family: $font-stack;
+  font-size: 2rem;
+}
+ul,li{
+  list-style:none;
+   display: grid;
+   grid-template-columns: 200px 200px 200px;
+}
+ul{
+  display: grid;
+  flex-wrap: wrap;
+
+}
+ul li a{
+  text-decoration:none;
+  color: white;
+  text-shadow: #666666 2px 2px 2px;
+  background:$notes1;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  box-shadow: 5px 5px 7px #212121;
+  transform: rotate(-6deg);
+  transition: transform .15s linear;
+}
+
+ul li:nth-child(even) a{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:$notes3;
+}
+ul li:nth-child(3n) a{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:$notes2;
+}
+ul li:nth-child(5n) a{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px #212121;
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+ul li{
+  display: grid;
+  margin:1em;
+   grid-template-columns: 200px 200px 200px;
+}
+}
+.profil p {
+  font-weight: lighter;
+  display: block;
+  width: 300px;
+  font-size: 25px;
+  color: $logo;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+b{
+  color:white;
+}
+.left{
+  float: left;
+  margin-left: 60px;
+}
+.right{
+  float: right;
+  margin-right: 60px;
+}
+
+h2{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: lighter;
+  }
+
+.card{
+  background: #BF74CC;
+  display: grid;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: lighter;
+  grid-template-columns: 200px 200px 200px;
+  border-radius: 25px;
+  flex: 0 1 24%;
+  margin-bottom: 25px;
+  margin-right: 14px;
+  white-space: nowrap;
+  position: relative;
+
+}
